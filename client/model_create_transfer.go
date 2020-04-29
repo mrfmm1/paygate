@@ -17,11 +17,11 @@ type CreateTransfer struct {
 	Amount string `json:"amount"`
 	// ID of the Originator account initiating the transfer.
 	Originator string `json:"originator"`
-	// ID of the Originator Depository to be be used to override the default depository.
+	// ID of the Originating Depository used with this transfer.
 	OriginatorDepository string `json:"originatorDepository,omitempty"`
 	// ID of the Receiver account the transfer was sent to.
 	Receiver string `json:"receiver"`
-	// ID of the Receiver Depository to be used to override the default depository
+	// ID of the Receiving Depository used with this transfer.
 	ReceiverDepository string `json:"receiverDepository,omitempty"`
 	// Brief description of the transaction, that may appear on the receiving entity’s financial statement
 	Description string `json:"description"`

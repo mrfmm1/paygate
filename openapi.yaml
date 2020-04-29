@@ -1847,7 +1847,7 @@ components:
         originatorDepository:
           type: string
           example: 59276ce4
-          description: ID of the Originator Depository to be be used to override the default depository.
+          description: ID of the Originating Depository used with this transfer.
         receiver:
           type: string
           example: feb492e6
@@ -1855,7 +1855,7 @@ components:
         receiverDepository:
           type: string
           example: dad7ddfb
-          description: ID of the Receiver Depository to be used to override the default depository
+          description: ID of the Receiving Depository used with this transfer.
         description:
           type: string
           description: Brief description of the transaction, that may appear on the receiving entity’s financial statement
@@ -1924,7 +1924,7 @@ components:
         originatorDepository:
           type: string
           example: 59276ce4
-          description: ID of the Originator Depository used with this transfer.
+          description: ID of the Originating Depository used with this transfer.
         receiver:
           type: string
           example: feb492e6
@@ -1932,7 +1932,7 @@ components:
         receiverDepository:
           type: string
           example: dad7ddfb
-          description: ID of the Receiver Depository used with this transfer.
+          description: ID of the Receiving Depository used with this transfer.
         description:
           type: string
           description: Brief description of the transaction, that may appear on the receiving entity’s financial statement

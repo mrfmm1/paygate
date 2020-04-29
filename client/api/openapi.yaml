@@ -2381,8 +2381,7 @@ components:
           example: 724b6abe
           type: string
         originatorDepository:
-          description: ID of the Originator Depository to be be used to override the
-            default depository.
+          description: ID of the Originating Depository used with this transfer.
           example: 59276ce4
           type: string
         receiver:
@@ -2390,8 +2389,7 @@ components:
           example: feb492e6
           type: string
         receiverDepository:
-          description: ID of the Receiver Depository to be used to override the default
-            depository
+          description: ID of the Receiving Depository used with this transfer.
           example: dad7ddfb
           type: string
         description:
@@ -2517,7 +2515,7 @@ components:
           example: 724b6abe
           type: string
         originatorDepository:
-          description: ID of the Originator Depository used with this transfer.
+          description: ID of the Originating Depository used with this transfer.
           example: 59276ce4
           type: string
         receiver:
@@ -2525,7 +2523,7 @@ components:
           example: feb492e6
           type: string
         receiverDepository:
-          description: ID of the Receiver Depository used with this transfer.
+          description: ID of the Receiving Depository used with this transfer.
           example: dad7ddfb
           type: string
         description:
