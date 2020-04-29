@@ -22,6 +22,6 @@ type CreateOriginator struct {
 	// An optional value required for Know Your Customer (KYC) validation of this Originator. This field is not saved by PayGate.
 	BirthDate time.Time `json:"birthDate,omitempty"`
 	Address   Address   `json:"address,omitempty"`
-	// Additional meta data to be used for display only
-	Metadata string `json:"metadata,omitempty"`
+	// Populated into the Batch Header CompanyDiscretionaryData field
+	Metadata string `json:"metadata"`
 }

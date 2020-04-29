@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **CustomerID** | **string** | Optional ID when Originator data was created against Moov&#39;s Customers service | [optional] 
 **BirthDate** | [**time.Time**](time.Time.md) | An optional value required for Know Your Customer (KYC) validation of this Originator. This field is not saved by PayGate.  | [optional] 
 **Address** | [**Address**](Address.md) |  | [optional] 
-**Metadata** | **string** | Additional meta data to be used for display only | [optional] 
+**Metadata** | **string** | Populated into the Batch Header CompanyDiscretionaryData field | [optional] 
 **Created** | [**time.Time**](time.Time.md) |  | [optional] 
 **Updated** | [**time.Time**](time.Time.md) |  | [optional] 
 

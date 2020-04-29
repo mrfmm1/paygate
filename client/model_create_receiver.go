@@ -22,6 +22,6 @@ type CreateReceiver struct {
 	// An optional object required for Know Your Customer (KYC) validation of this Receiver. This field is not saved by PayGate.
 	BirthDate time.Time `json:"birthDate,omitempty"`
 	Address   Address   `json:"address,omitempty"`
-	// Additional meta data to be used for display only
-	Metadata string `json:"metadata,omitempty"`
+	// Populated into the Entry Detail IndividualName field
+	Metadata string `json:"metadata"`
 }

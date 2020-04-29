@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **Email** | **string** | The receivers email address | 
 **BirthDate** | [**time.Time**](time.Time.md) | An optional object required for Know Your Customer (KYC) validation of this Receiver. This field is not saved by PayGate.  | [optional] 
 **Address** | [**Address**](Address.md) |  | [optional] 
-**Metadata** | **string** | Additional meta data to be used for display only | [optional] 
+**Metadata** | **string** | Populated into the Entry Detail IndividualName field | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

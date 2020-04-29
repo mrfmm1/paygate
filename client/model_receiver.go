@@ -28,7 +28,7 @@ type Receiver struct {
 	Address   Address   `json:"address,omitempty"`
 	// Optional ID when Originator data was created against Moov's Customers service
 	CustomerID string `json:"customerID,omitempty"`
-	// Additional meta data to be used for display only
+	// Populated into the Entry Detail IndividualName field
 	Metadata string    `json:"metadata,omitempty"`
 	Created  time.Time `json:"created,omitempty"`
 	Updated  time.Time `json:"updated,omitempty"`

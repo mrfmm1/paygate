@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ID** | **string** | Optional ID to uniquely identify this transfer. If omitted, one will be generated | [optional] 
+**ID** | **string** | ID to uniquely identify this transfer. If omitted, one will be generated | [optional] 
 **TransferType** | **string** | Type of transaction being actioned against the receiving institution. Expected values are pull (debits) or push (credits). Only one period used to signify decimal value will be included. | [optional] 
 **Amount** | **string** | Amount of money. USD - United States. | 
 **Originator** | **string** | ID of the Originator account initiating the transfer. | 
-**OriginatorDepository** | **string** | ID of the Originator Depository to be be used to override the default depository. | [optional] 
+**OriginatorDepository** | **string** | ID of the Originator Depository used with this transfer. | [optional] 
 **Receiver** | **string** | ID of the Receiver account the transfer was sent to. | 
-**ReceiverDepository** | **string** | ID of the Receiver Depository to be used to override the default depository | [optional] 
+**ReceiverDepository** | **string** | ID of the Receiver Depository used with this transfer. | [optional] 
 **Description** | **string** | Brief description of the transaction, that may appear on the receiving entity’s financial statement | 
 **StandardEntryClassCode** | **string** | Standard Entry Class code will be generated based on Receiver type for CCD and PPD | [optional] 
 **Status** | [**TransferStatus**](TransferStatus.md) |  | [optional] 

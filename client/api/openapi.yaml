@@ -2003,12 +2003,13 @@ components:
         address:
           $ref: '#/components/schemas/Address'
         metadata:
-          description: Additional meta data to be used for display only
+          description: Populated into the Batch Header CompanyDiscretionaryData field
           example: Primary payment account
           type: string
       required:
       - defaultDepository
       - identification
+      - metadata
     Originator:
       example:
         metadata: Primary payment account
@@ -2055,7 +2056,7 @@ components:
         address:
           $ref: '#/components/schemas/Address'
         metadata:
-          description: Additional meta data to be used for display only
+          description: Populated into the Batch Header CompanyDiscretionaryData field
           example: Primary payment account
           type: string
         created:
@@ -2100,12 +2101,13 @@ components:
         address:
           $ref: '#/components/schemas/Address'
         metadata:
-          description: Additional meta data to be used for display only
+          description: Populated into the Entry Detail IndividualName field
           example: Authorized for re-occurring WEB
           type: string
       required:
       - defaultDepository
       - email
+      - metadata
     Receiver:
       example:
         metadata: Authorized for re-occurring WEB
@@ -2160,7 +2162,7 @@ components:
           example: d0a11cf0
           type: string
         metadata:
-          description: Additional meta data to be used for display only
+          description: Populated into the Entry Detail IndividualName field
           example: Authorized for re-occurring WEB
           type: string
         created:
@@ -2492,8 +2494,8 @@ components:
           paymentInformation: test payment
       properties:
         ID:
-          description: Optional ID to uniquely identify this transfer. If omitted,
-            one will be generated
+          description: ID to uniquely identify this transfer. If omitted, one will
+            be generated
           example: 33164ac6
           type: string
         transferType:
@@ -2515,8 +2517,7 @@ components:
           example: 724b6abe
           type: string
         originatorDepository:
-          description: ID of the Originator Depository to be be used to override the
-            default depository.
+          description: ID of the Originator Depository used with this transfer.
           example: 59276ce4
           type: string
         receiver:
@@ -2524,8 +2525,7 @@ components:
           example: feb492e6
           type: string
         receiverDepository:
-          description: ID of the Receiver Depository to be used to override the default
-            depository
+          description: ID of the Receiver Depository used with this transfer.
           example: dad7ddfb
           type: string
         description:
