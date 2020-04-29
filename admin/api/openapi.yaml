@@ -3875,6 +3875,8 @@ components:
     Transfer:
       example:
         amount: USD 99.99
+        PPDDetail:
+          paymentInformation: test payment
         TELDetail:
           phoneNumber: 123.456.7890
           paymentType: single
@@ -3988,6 +3990,8 @@ components:
           $ref: '#/components/schemas/CCDDetail'
         IATDetail:
           $ref: '#/components/schemas/IATDetail'
+        PPDDetail:
+          $ref: '#/components/schemas/PPDDetail'
         TELDetail:
           $ref: '#/components/schemas/TELDetail'
         WEBDetail:
@@ -4139,6 +4143,14 @@ components:
         foreignCorrespondentBankBranchCountryCode:
           description: ISO 3166 country code of foreign bank used
           example: GB
+          type: string
+    PPDDetail:
+      example:
+        paymentInformation: test payment
+      properties:
+        paymentInformation:
+          description: Metadata for the transaction, placed in addenda 05 record
+          example: test payment
           type: string
     TELDetail:
       example:

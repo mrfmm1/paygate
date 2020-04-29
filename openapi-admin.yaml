@@ -467,7 +467,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: 'https://raw.githubusercontent.com/moov-io/paygate/master/openapi.yaml#/components/schemas/Depository'
+                $ref: 'https://raw.githubusercontent.com/moov-io/paygate/release-v0.8/openapi.yaml#/components/schemas/Depository'
         '400':
           description: See error message
           content:
@@ -500,7 +500,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: 'https://raw.githubusercontent.com/moov-io/paygate/master/openapi.yaml#/components/schemas/Transfer'
+                $ref: 'https://raw.githubusercontent.com/moov-io/paygate/release-v0.8/openapi.yaml#/components/schemas/Transfer'
         '400':
           description: See error message
           content:
@@ -619,11 +619,11 @@ components:
     UpdateDepository:
       properties:
         status:
-          $ref: 'https://raw.githubusercontent.com/moov-io/paygate/master/openapi.yaml#/components/schemas/DepositoryStatus'
+          $ref: 'https://raw.githubusercontent.com/moov-io/paygate/release-v0.8/openapi.yaml#/components/schemas/DepositoryStatus'
     UpdateTransferStatus:
       properties:
         status:
-          $ref: 'https://raw.githubusercontent.com/moov-io/paygate/master/openapi.yaml#/components/schemas/TransferStatus'
+          $ref: 'https://raw.githubusercontent.com/moov-io/paygate/release-v0.8/openapi.yaml#/components/schemas/TransferStatus'
     MicroDepositAmount:
       description: A string with currency code and amount
       properties:

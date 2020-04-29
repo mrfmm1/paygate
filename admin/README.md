@@ -95,6 +95,7 @@ Class | Method | HTTP request | Description
  - [MergedFiles](docs/MergedFiles.md)
  - [MicroDepositAmount](docs/MicroDepositAmount.md)
  - [Offset](docs/Offset.md)
+ - [PpdDetail](docs/PpdDetail.md)
  - [ReturnCode](docs/ReturnCode.md)
  - [SftpConfig](docs/SftpConfig.md)
  - [TelDetail](docs/TelDetail.md)
