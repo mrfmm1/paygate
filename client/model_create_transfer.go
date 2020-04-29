@@ -18,15 +18,15 @@ type CreateTransfer struct {
 	// ID of the Originator account initiating the transfer.
 	Originator string `json:"originator"`
 	// ID of the Originating Depository used with this transfer.
-	OriginatorDepository string `json:"originatorDepository,omitempty"`
+	OriginatorDepository string `json:"originatorDepository"`
 	// ID of the Receiver account the transfer was sent to.
 	Receiver string `json:"receiver"`
 	// ID of the Receiving Depository used with this transfer.
-	ReceiverDepository string `json:"receiverDepository,omitempty"`
+	ReceiverDepository string `json:"receiverDepository"`
 	// Brief description of the transaction, that may appear on the receiving entity’s financial statement
 	Description string `json:"description"`
-	// Standard Entry Class code will be generated based on Receiver type for CCD and PPD
-	StandardEntryClassCode string `json:"standardEntryClassCode,omitempty"`
+	// Standard Entry Class (SEC) code used for this transfer. The corresponding Detail object also needs to be provided.
+	StandardEntryClassCode string `json:"standardEntryClassCode"`
 	// When set to true this indicates the transfer should be processed the same day if possible.
 	SameDay   bool      `json:"sameDay,omitempty"`
 	CCDDetail CcdDetail `json:"CCDDetail,omitempty"`

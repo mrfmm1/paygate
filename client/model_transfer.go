@@ -31,7 +31,7 @@ type Transfer struct {
 	ReceiverDepository string `json:"receiverDepository,omitempty"`
 	// Brief description of the transaction, that may appear on the receiving entity’s financial statement
 	Description string `json:"description"`
-	// Standard Entry Class code will be generated based on Receiver type for CCD and PPD
+	// Standard Entry Class (SEC) code used for this transfer.
 	StandardEntryClassCode string         `json:"standardEntryClassCode,omitempty"`
 	Status                 TransferStatus `json:"status,omitempty"`
 	// When set to true this indicates the transfer should be processed the same day if possible.

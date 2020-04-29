@@ -1864,7 +1864,7 @@ components:
           maxLength: 79
         standardEntryClassCode:
           type: string
-          description: Standard Entry Class code will be generated based on Receiver type for CCD and PPD
+          description: Standard Entry Class (SEC) code used for this transfer. The corresponding Detail object also needs to be provided.
           example: WEB
         sameDay:
           type: boolean
@@ -1883,9 +1883,12 @@ components:
       required:
         - transferType
         - amount
-        - receiver
         - originator
+        - originatorDepository
+        - receiver
+        - receiverDepository
         - description
+        - standardEntryClassCode
     CreateTransfers:
       type: array
       items:
@@ -1941,7 +1944,7 @@ components:
           maxLength: 79
         standardEntryClassCode:
           type: string
-          description: Standard Entry Class code will be generated based on Receiver type for CCD and PPD
+          description: Standard Entry Class (SEC) code used for this transfer.
           example: WEB
         status:
           $ref: '#/components/schemas/TransferStatus'

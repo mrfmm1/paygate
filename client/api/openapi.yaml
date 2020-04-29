@@ -2400,8 +2400,8 @@ components:
           minLength: 1
           type: string
         standardEntryClassCode:
-          description: Standard Entry Class code will be generated based on Receiver
-            type for CCD and PPD
+          description: Standard Entry Class (SEC) code used for this transfer. The
+            corresponding Detail object also needs to be provided.
           example: WEB
           type: string
         sameDay:
@@ -2423,7 +2423,10 @@ components:
       - amount
       - description
       - originator
+      - originatorDepository
       - receiver
+      - receiverDepository
+      - standardEntryClassCode
       - transferType
     CreateTransfers:
       items:
@@ -2534,8 +2537,7 @@ components:
           minLength: 1
           type: string
         standardEntryClassCode:
-          description: Standard Entry Class code will be generated based on Receiver
-            type for CCD and PPD
+          description: Standard Entry Class (SEC) code used for this transfer.
           example: WEB
           type: string
         status:
